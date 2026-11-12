@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Свадебное приглашение — 5 вариантов</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#f4f1ec;color:#222;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:48px 24px 80px}
+header{max-width:1200px;margin:0 auto 40px}
+h1{font-size:34px;font-weight:600;letter-spacing:-.01em;margin-bottom:10px}
+header p{color:#666;max-width:640px;line-height:1.55}
+.grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:40px 28px}
+.phone{width:100%;aspect-ratio:390/780;border-radius:34px;border:8px solid #1d1d1f;overflow:hidden;background:#fff;box-shadow:0 18px 40px rgba(0,0,0,.14)}
+.phone iframe{width:390px;height:780px;border:0;transform-origin:0 0}
+article h2{font-size:18px;font-weight:600;margin:18px 0 6px;display:flex;gap:10px;align-items:baseline}
+article h2 span{color:#999;font-size:14px;font-variant-numeric:tabular-nums}
+article p{font-size:14px;color:#666;line-height:1.5;margin-bottom:10px}
+article a{font-size:14px;color:#1A5FB4;text-decoration:none;font-weight:500}
+article a:hover{text-decoration:underline}
+</style></head><body>
+<header><h1>Сайт-приглашение: 5 вариантов</h1><p>Каждое приглашение — одна страница для телефона: обратный отсчёт, календарь, программа дня, место, дресс-код, детали и анкета гостя. Имена, дата и фото — пока примерные. Внутри превью можно листать.</p></header>
+<div class="grid"><article><div class="phone"><iframe src="v1.html" title="Вариант 1: Оливковый журнал" loading="lazy"></iframe></div>
+<h2><span>01</span>Оливковый журнал</h2><p>Бумажная фактура, оливковый и шоколад, крупный антиквенный шрифт и рукописные акценты — как в референсе YESDAY.</p><a href="v1.html" target="_blank" rel="noopener">Открыть на весь экран →</a></article><article><div class="phone"><iframe src="v2.html" title="Вариант 2: Минимализм и линия" loading="lazy"></iframe></div>
+<h2><span>02</span>Минимализм и линия</h2><p>Белый шёлк, тонкий высокий шрифт, линия-рисунок и красное сердце. Программа дня — волнистой линией.</p><a href="v2.html" target="_blank" rel="noopener">Открыть на весь экран →</a></article><article><div class="phone"><iframe src="v3.html" title="Вариант 3: Игривый и яркий" loading="lazy"></iframe></div>
+<h2><span>03</span>Игривый и яркий</h2><p>Сливочно-жёлтый и розовый, весёлые дудлы, бегущая строка, сердечки вместо кружков палитры.</p><a href="v3.html" target="_blank" rel="noopener">Открыть на весь экран →</a></article><article><div class="phone"><iframe src="v4.html" title="Вариант 4: Розовая нежность" loading="lazy"></iframe></div>
+<h2><span>04</span>Розовая нежность</h2><p>Пудрово-розовые переходы, классическая антиква и каллиграфия, мягкие формы фото.</p><a href="v4.html" target="_blank" rel="noopener">Открыть на весь экран →</a></article><article><div class="phone"><iframe src="v5.html" title="Вариант 5: Вечерний бархат" loading="lazy"></iframe></div>
+<h2><span>05</span>Вечерний бархат</h2><p>Тёмный бордо и золото, арки и тонкие орнаменты — для вечерней свадьбы в ресторане.</p><a href="v5.html" target="_blank" rel="noopener">Открыть на весь экран →</a></article></div>
+<script>
+function fit(){document.querySelectorAll('.phone').forEach(p=>{const f=p.querySelector('iframe'),k=p.clientWidth/390;f.style.transform='scale('+k+')';f.style.height=(p.clientHeight/k)+'px';});}
+addEventListener('resize',fit);fit();
+</script></body></html>
